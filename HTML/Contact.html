@@ -1,0 +1,150 @@
+<!DOCTYPE HTML5>
+<html>
+
+	<head>
+		<title>Warrior's Hoard</title>
+		 <meta charset="UTF-8">
+		 <link href = "../css/style.css" rel = "stylesheet" type = "text/css" />
+		 <link rel="shortcut icon" href="../images/logos/logo-black.png">		 
+		 <script type="text/javascript" src= "../JavaScript/jquery-1.12.3.min.js"></script>
+		 <script type="text/javascript" src= "../JavaScript/scripts.js"></script>
+		
+	</head>
+<body>
+
+	<div id = "header-contact" class = "full-width">
+		<div class="container">
+			<div id = "phone">
+				tel: 12345 678910
+			</div>
+				<div id = "social-media-cart">
+					<nav>
+						<ul>
+							<li><a href ="#"><img src="../images/icons/facebook.png"></a></li>
+							<li><a href ="#"><img src="../images/icons/twitter.png"></a></li>
+							<li><a href ="#"><img src="../images/icons/linkedin.png"></a></li>
+							<li><a href ="#">Cart</a></li>
+						</ul>
+					</nav>
+			</div>
+		</div>
+	</div>
+		
+	<header class = "full-width" id="header">
+		<div id = "nav-container">
+			<nav id = "nav-header">
+				<ul>
+					<li><a href ="home.html">Home</a></li>
+					<li><a href ="products.html">Products</a></li>
+					<li><a href ="home.html"><img id = "logo-header" src="../images/logos/logo-black.png"></a></li>
+					<li><a href ="about-us.html">About Us</a></li>
+					<li><a href ="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	
+	
+	
+	<div id="form-container" class = "parchment-bottom">
+		<div class="container2">
+			<h1>Send us a Message</h2>
+							
+						<form name = "contact-form" id="contact-form" action="#" method="POST" enctype="multipart/form-data" onsubmit="return validateForm()">
+									<div class="row">
+										<label for="name">Your name:</label><br />
+										<input id="name" class="input" name="name" type="text" value="" size="30" placeholder="e.g John Smith" required /><br />
+									</div>
+									<div class="row">
+										<label for="email">Your email:</label><br />
+										<input id="email" class="input" name="email" type="email" value="" size="30" placeholder="e.g example@example.co.uk" required /><br />
+									</div>
+									<div class="row">
+										<label for="phone">Your phonenumber:</label><br />
+										<input id="phone" class="input" name="phone" type="tel" pattern="^\d{5} \d{6}$" value="" size="30" placeholder="e.g 12345 678910" required /><br />
+									</div>
+									<div class="row">
+											<label for="contact">Prefered contact type:</label><br />
+											<select name="contact">
+											<option> Phone
+											<option> Email
+											<option> Postal
+										</select>
+									</div>
+									<div class="row">
+										<label for="message">Your message:</label><br />
+										<textarea id="message" class="input" name="message" rows="7" cols="30" placeholder="Enter your message..." required></textarea><br />
+									</div>
+									<div class="row">
+										<label for="date">Date:</label><br />
+										<input id="date" class="input" name="date" type="text" value="" size="30" placeholder="e.g 26/05/2016" required /><br />
+									</div>
+							<input id="submit_button" type="submit" value="Send email"  />
+						</form>
+		</div>
+	</div>
+	
+	
+	<div id="location-container" class="gmap-overflow-fix">
+		<div class="container2">
+			<h1 id = "location-title">Get in Contact!</h1>
+			<div id ="gmap-container">
+			
+			
+			
+				<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+					<div class="gmap-overflow-fix" style='overflow-y:hidden;height:440px;width:700px;'>
+					<div id='gmap_canvas' style='height:440px;width:700px;'></div><div>
+				<small><a href="http://embedgooglemaps.com">									embed google maps							
+				</a></small></div><div><small><a href="https://privacypolicytemplate.net">privacy policy template</a>
+				</small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div>
+				<script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(51.1872015,0.26254949999997734)
+				,mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker(
+				{map: map,position: new google.maps.LatLng(51.1872015,0.26254949999997734)});infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong><br>Brook St, Tonbridge TN9 2PW<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}
+				google.maps.event.addDomListener(window, 'load', init_map);</script>
+			</div>
+			
+			<h2>Warrior's Hoard</h2>
+			<h2>Brook St,</h2>
+			<h2>Tonbridge,</h2>
+			<h2>TN9 2PW</h2>
+			<br>
+			<h2>Tel: 12345 678910</h2>
+			<h2>Email: warriorshoard@gmail.co.uk</h2>
+			<br>
+			<ul>
+				<li><a href ="#"><img src="../images/icons/facebook.png"></a><h2>@Facebook</h2></li>
+				<li><a href ="#"><img src="../images/icons/twitter.png"></a><h2>@Twitter</h2></li>
+				<li><a href ="#"><img src="../images/icons/linkedin.png"></a><h2>@LinkedIn</h2></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+
+	<footer id = "footer" class = "full-width">
+			<div class = "container">
+				<div id = "copyright-footer">
+					&copy; 2016 Warrior's Hoard Ltd.
+				</div>
+				<div id = "nav-footer">
+					<ul>
+					<li><a href ="home.html">Home</a></li>
+					<li><a href ="#">Products</a></li>
+					<li><a href ="#">About Us</a></li>
+					<li><a href ="#">Contact</a></li>
+					<li><a href ="#">Privacy</a></li>
+					<li><a href ="#">Terms</a></li>
+				</ul>
+				</div>
+				
+			</div>
+		
+	</footer>
+</body>
+	
+</html>
